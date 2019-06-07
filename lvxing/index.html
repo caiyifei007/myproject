@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>携程旅行网</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <!--左侧电梯导航-->
+    <ul id="elevator_nav">
+        <li class="active ele_vacation">
+            <a href="#tmh">旅游</a>
+        </li>
+        <li class="ele_hotel">
+            <a href="#hotel">酒店</a>
+        </li>
+        <li class="ele_flig">
+            <a href="#flightC">机票</a>
+        </li>
+        <li class="ele_car">
+            <a href="#car">用车</a>
+        </li>
+        <li class="ele_play">
+            <a href="#play">玩乐</a>
+        </li>
+        <li class="ele_buy">
+            <a href="#buy">购物</a>
+        </li>
+        <li class="ele_guide">
+            <a href="#guide">攻略</a>
+        </li>
+        <li class="ele_serve">
+            <a href="#serve">服务</a>
+        </li>
+    </li>
+    </ul>
+    <!--顶部导航条-->
+    <header class="header">
+        <!--logo-->
+        <div class="logo">
+            <a href="#" title="携程旅行网"></a>
+        </div>
+        <!--搜索框-->
+        <div class="search">
+            <form action="" method="get" target="_blank">
+                <input type="text" autocompelete="off" placeholder="目的地/酒店/景点/关键字"/>
+                <button type="button"></button>
+            </form>
+        </div>
+        <!--顶部导航条-->
+        <div class="nav_bar">
+            <ul class="language">
+                <li id="language">
+                    <a href="" class="selected">
+                        <span>
+                            <i class="ico_lang"></i>简体中文<b class="arrow"></b>
+                        </span>
+                    </a>
+                    <div class="language_list" style="display:none;">
+                        <ul>
+                            <li><a class="language_hk" href="#">香港(繁体)</a></li>
+                            <li><a class="language_hk" href="#">Hong Kong(English)</a></li>
+                            <li><a class="language_en" href="#">English</a></li>
+                            <li><a class="language_jap" href="#">&nbsp;</a></li>
+                            <li><a class="language_korea" href="#">&nbsp;</a></li>
+                            <li><a class="language_sg" href="#">Singapore</a></li>
+                            <li><a class="language_id" href="#">Bahasa Indonesia</a></li>
+                            <li><a class="language_my" href="#">Bahasa Malaysia</a></li>
+                            <li><a class="language_th" href="#">&nbsp;</a></li>
+                            <li><a class="language_fr" href="#">Francais</a></li>
+                            <li><a class="language_de" href="#">Deutsch</a></li>
+                            <li><a class="language_es" href="#">Espanol</a></li>
+                            <li><a class="language_ru" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="service">
+                <li><a href="">客服中心</a></li>
+            </ul>
+            <ul class="service service_1180" id="service">
+                <li>
+                    <a href="" class="service_tel">
+                        <span title="免境内长话费">
+                            国内 :
+                            <em class="service_telnum">1010-6666</em>
+                            <b class="arrow"></b>
+                        </span>
+                    </a>
+                    <div class="service_wrap" style="display:none">
+                        <ul class="service_list">
+                            <li>
+                                <dl>
+                                    <dd><span style="color:#999">（或）</span><em>400-820-6666</em></dd>
+                                    <dd>
+                                        香港：<em>+852-3069-9966</em>
+                                    </dd>
+                                    <dd>
+                                        海外：<em>+86-21-3406-4888</em>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="wireless">
+                <li id="ico_app">
+                    <a href="">
+                        <i class="ico_app"></i>
+                    </a>
+                    <div class="wireless_box" style="display:none">
+                        <i class="ico_chatarrow"></i>
+                        <div class="wireless_inbox">
+                            <dl>
+                                <dt>手机扫码快速下载</dt>
+                                <dd>
+                                    <img src="images/er_ctrip_app.jpg" alt=""/>
+                                </dd>
+                            </dl>
+                            <a href="" class="link_app">
+                                携程旅行手机版
+                                <i>></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li id="ico_wechat">
+                    <a href="" class="wireless">
+                        <i class="ico_wechat"></i>
+                    </a>
+                    <div class="wireless_box" style="display:none">
+                        <i class="ico_chararrow"></i>
+                        <div class="ico_wireless_inbox">
+                            <dl>
+                                <dt>携程订阅号:helloctrip</dt>
+                                <dd>
+                                    <img src="images/er_ctrip_wechat.jpg" alt=""/>
+                                </dd>
+                            </dl>
+                            <span>扫一扫，领旅行福利</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--导航-->
+    <nav class="nav_single">
+        <div class="base_nav">
+            <ul class="nav_content" id="nav_content">
+                <li class="nav_current nav_home"><a href="#">首页</a></li>
+                <li class="divider"></li>
+                <li class="nav_hotel">
+                    <a href="#">
+                        酒店
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--酒店菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav" id="div_hotel">
+                            <li><a href="#">国内酒店</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">国外酒店</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">海外民宿+短租</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">团购</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">特价酒店</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">途家公寓</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">酒店+景点</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">客栈民宿</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    会场+团队房
+                                    <span class="label_cn"><em>特惠</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_hotel"></i>酒店订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_vac">
+                    <a href="#">
+                        旅游
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--旅游菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav" id="div_vacation">
+                            <li><a href="#">旅游首页</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">周末游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">跟团游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">自行游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">邮轮</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    酒店+景点
+                                    <span class="label_cn"><em>自驾游</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">当地玩乐</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">主题游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">定制•包团</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    &nbsp;游学
+                                    <span class="label_cn"><em>夏令营</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">签证</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">企业会奖</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">顶级游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">爱玩户外</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">保险</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">特卖汇</a></li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_vacations"></i>旅游订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_flight">
+                    <a href="#">
+                        机票
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--机票菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">国内机票</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">国际机票</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">机+酒</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">航班动态</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">值机选座</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">退票改签</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">机场攻略</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">机场巴士</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    公务员通道
+                                    <span class="label_en"><em>NEW</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_flight"></i>机票订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_trains">
+                    <a href="#">
+                        火车
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--火车菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">国内火车票</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">国际•台湾火车票</a></li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_train"></i>火车票订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_destination">
+                    <a href="#">
+                        汽车票
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--汽车票菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">汽车票</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">机场巴士</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    船票
+                                    <span class="label_en"><em>NEW</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_bus"></i>汽车票订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_car">
+                    <a href="#">
+                        用车
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--用车菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">用车首页</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    国际租车
+                                    <span class="label_cn"><em>特惠</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">国际接送机</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">国内租车</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">国内接送机/火车</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    日租包车
+                                    <span class="label_en"><em>NEW</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_car"></i>用车订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_ticket">
+                    <a href="#">
+                        门票
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--门票菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">国内门票</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">海外门票</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    当地玩乐
+                                    <span class="label_en"><em>NEW</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">出境WiFi</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">周末游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">迪士尼</a></li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_ticket"></i>门票订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_tuan">
+                    <a href="#">
+                        团购
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--团购菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">团购首页</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">酒店</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">门票</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">旅游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">美食</a></li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_tuan"></i>团购订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_destination01"><a href="#">攻略</a></li>
+                <li class="divider"></li>
+                <li class="nav_g">
+                    <a href="#">
+                        全球购
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--全球购菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">名店购</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">退税</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">刷卡奖励</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_lpk">
+                    <a href="#">
+                        礼品卡
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--礼品卡菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">礼品卡首页</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">礼品卡套餐</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">存款证明</a></li>
+                        </ul>
+                        <a class="ico_order" href="#"><i class="icon_card"></i>礼品卡订单 &gt;</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_sl">
+                    <a href="#">
+                        商旅
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--商旅菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">商旅首页</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    企业差旅平台
+                                    <span class="label_en"><em>HOT</em><i class="triangle"></i></span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">会议旅游</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="nav_cruise"><a href="#">邮轮</a></li>
+                <li class="divider divider_spec"></li>
+                <li class="nav_cruise_skysea"><a href="#">天海邮轮</a></li>
+                <li class="divider"></li>
+                <li class="nav_more">
+                    <a href="#">
+                        更多
+                        <i class="ico_triangle"></i>
+                        <span class="point"></span>
+                    </a>
+                    <!--更多菜单弹窗-->
+                    <div class="subnav_wrap" style="display:none">
+                        <ul class="sub_nav">
+                            <li><a href="#">积分商城</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">合作卡</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--登录&注册框-->
+                <li class="nav_myctrip">
+                    <ul>
+                        <li>
+                            <a href="#">登录</a>
+                            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                            <a href="#">注册</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--国际旅行直通车-->
+    <div class="subnav_interval">
+        <h2 class="line_title">国际旅行直通车<i class="icon_arrow"></i></h2>
+        <ul class="line_list">
+            <li><i class="icon_hotel"></i><a href="#">海外酒店</a></li>
+            <li><i class="icon_flight"></i><a href="#">国际机票</a></li>
+            <li><i class="icon_car"></i><a href="#">国际租车</a></li>
+            <li><i class="icon_train"></i><a href="#">国际•台湾火车票</a></li>
+            <li><i class="icon_outboundtravel"></i><a href="#"">出境旅游</a></li>
+            <li><i class="icon_HHtravel"></i><a href="#">顶级游</a></li>
+            <li><i class="icon_ticket"></i><a href="#">海外门票</a></li>
+            <li><i class="icon_visa"></i><a href="#">签证</a></li>
+            <li><i class="icon_insurance"></i><a href="#">出境保险</a></li>
+            <li><i class="icon_wifi"></i><a href="#">出境WiFi</a></li>
+        </ul>
+    </div>
+    <!--广告轮播-->
+    <div class="banner">
+        <div class="pic_banner">
+            <div class="slide_banner" id="slide_banner">
+                <div id="pic1" class="slide_banner_cont" style="display:block">
+                    <a href="#"><img src="images/dwj1920x340.jpg" width="100%" height="340" alt=""/></a>
+                </div>
+                <div id="pic2" class="slide_banner_cont" style="display:none">
+                    <a href="#"><img src="images/700p0400000008hfk82D9_1920_340_17.jpg" width="100%" height="340" alt=""/></a>
+                </div>
+                <div id="pic3" class="slide_banner_cont" style="display:none">
+                    <a href="#"><img src="images/700d0400000005gds8783_1920_340_17.jpg" width="100%" height="340" alt=""/></a>
+                </div>
+                <div id="pic4" class="slide_banner_cont" style="display:none">
+                    <a href="#"><img src="images/700g0400000007yt606DA_1920_340_17.jpg" width="100%" height="340" alt=""/></a>
+                </div>
+                <div id="pic5" class="slide_banner_cont" style="display:none">
+                    <a href="#"><img src="images/700g0400000008h5tED64_1920_340_17.jpg" width="100%" height="340" alt=""/></a>
+                </div>
+                <div id="pic6" class="slide_banner_cont" style="display:none">
+                    <a href="#"><img src="images/700t04000000095ea39F5_1920_340_17.jpg" width="100%" height="340" alt=""/></a>
+                </div>
+                <div id="pic7" class="slide_banner_cont" style="display:none">
+                    <a href="#"><img src="images/700u050000000cn7k8DDC_1920_340_17.jpg" width="100%" height="340" alt=""/></a>
+                </div>
+            </div>
+            <div class="dot_wrap" id="banner_dot">
+                <div class="dot_group">
+                    <a class="dot dot_current" data-index="0"></a>
+                    <a class="dot" data-index="1"></a>
+                    <a class="dot" data-index="2"></a>
+                    <a class="dot" data-index="3"></a>
+                    <a class="dot" data-index="4"></a>
+                    <a class="dot" data-index="5"></a>
+                    <a class="dot" data-index="6"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--广告轮播上方的输入框窗口-->
+    <div class="main_search">
+        <div class="search_box">
+            <ul class="s_tabs">
+                <li class="current"><b>酒店</b></li>
+                <li><b>机票</b></li>
+                <li><b>自由行</b></li>
+                <li><b>旅游</b></li>
+                <li><b>火车</b></li>
+                <li><b>租车</b></li>
+                <li><b>门票</b></li>
+            </ul>
+            <div class="s_content">
+                <p class="s_subtab_a">
+                    <a class="current">国内酒店</a>
+                    <a>海外酒店</a>
+                    <a>酒店团购</a>
+                    <a>酒店+景点</a>
+                    <a>会场+团队房</a>
+                </p>
+                <form>
+                    <div class="s_item_cont">
+                        <div class="s_item w100">
+                            目的地<input id="destination_search_box" class="w380" type="text" placeholder="中文/拼音"/>
+                            <div id="destination_box" style="display:none;">
+                                <p class="prompt">支持中文/拼音/简拼输入</p>
+                                <!--目的地弹窗-->
+                                <div class="destination_text">
+                                    <b class="close">&times;</b>
+                                    <p class="sub_title">
+                                        <a class="current">热门</a>
+                                        <a>ABCD</a>
+                                        <a>EFGH</a>
+                                        <a>JKLM</a>
+                                        <a>NOPQRS</a>
+                                        <a>TUVWX</a>
+                                        <a>YZ</a>
+                                    </p>
+                                    <ul class="destination_name">
+                                        <li>北京</li>
+                                        <li>上海</li>
+                                        <li>天津</li>
+                                        <li>重庆</li>
+                                        <li>大连</li>
+                                        <li>青岛</li>
+                                        <li>西安</li>
+                                        <li>南京</li>
+                                        <li>苏州</li>
+                                        <li>杭州</li>
+                                        <li>厦门</li>
+                                        <li>成都</li>
+                                        <li>深圳</li>
+                                        <li>广州</li>
+                                        <li>三亚</li>
+                                        <li>台北</li>
+                                        <li>香港</li>
+                                        <li>济南</li>
+                                        <li>宁波</li>
+                                        <li>沈阳</li>
+                                        <li>武汉</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s_item_cont">
+                        <div class="s_item w211">
+                            入住日期<input type="text" placeholder="yyyy-mm-dd"/>
+                        </div>
+                        <div class="s_item w240">
+                            退房日期<input type="text" placeholder="yyyy-mm-dd"/>
+                        </div>
+                    </div>
+                    <div class="s_item_cont">
+                        <div class="s_item">
+                            酒店级别
+                            <select name="Star">
+                                <option value="0">不限</option>
+                                <option value="5">五星级/豪华</option>
+                                <option value="4">四星级/高档</option>
+                                <option value="3">三星级/舒适</option>
+                                <option value="2">二星级以下/经济</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="s_item_cont">
+                        <div class="s_item w100">
+                            关键词<input class="w380" type="text" placeholder="（选填）酒店名/地标/商圈"/>
+                        </div>
+                    </div>
+                    <div class="s_button">
+                        <input type="button" value="搜索" class="s_btn" title="搜索"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--主体-->
+    <section class="main" id="main">
+        <!--特卖汇-->
+        <div class="mod tmh" id="tmh">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">特卖汇<i></i></span>
+                    <span>出境游<i></i></span>
+                    <span>国内游<i></i></span>
+                    <span>周边游<i></i></span>
+                    <span>邮轮<i></i></span>
+                    <span>门票<i></i></span>
+                    <span>顶级游<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd">
+                <div class="mod_bd_panel mod_bd_panel_tmh">
+                    <div class="product">
+                        <div class="product_hd">
+                            <ul class="inner_tabs_nav">
+                                <li class="active"><a href="#">精选</a></li>
+                                <li><a href="#">跟游团</a></li>
+                                <li><a href="#">自行游</a></li>
+                                <li><a href="#">当地游</a></li>
+                                <li><a href="#">邮轮游</a></li>
+                            </ul>
+                            <a href="#" class="link_more">
+                                更多特卖汇&gt;
+                            </a>
+                        </div>
+                        <div class="product_bd">
+                            <div class="inner_tab_panel active">
+                                <div class="product_item" title="泰国清迈6日4晚自由行(5钻)·最高立减1000 暑期/直飞 特卖汇">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/CggYG1XCxMCALq5fAAEqiFhdet0158_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="吉祥直飞 最高立减1000元暑期班次">吉祥直飞 最高立减1000元暑期班次</p>
+                                        </div>
+                                        <p class="item_name">泰国清迈6日4晚自由行(5钻)·最高立减1000 暑期/直飞 特卖汇</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>2182<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="韩国济州岛4日3晚跟团游(3钻)·携程自营 骑马+泰迪熊 特卖汇">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/Cghzf1VTF3aAHXRrAAcqpRT66T8961_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="济州岛特惠">济州岛特惠</p>
+                                        </div>
+                                        <p class="item_name">韩国济州岛4日3晚跟团游(3钻)·携程自营 骑马+泰迪熊 特卖汇</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>1199<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="马尔代夫四季库达呼拉岛Kuda Huraa自由行(5钻)·6日4晚 泳池别墅+早晚餐+儿童特惠 特卖汇">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/10150_4_s32886_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="大牌明星最爱小四季，酒店有私家水疗小岛，附私人泳池，爆款特价来袭！">大牌明星最爱小四季，酒店有私家水疗小岛，附私人泳池，爆款特价来袭！</p>
+                                        </div>
+                                        <p class="item_name">马尔代夫四季库达呼拉岛Kuda Huraa自由行(5钻)·6日4晚 泳池别墅+早晚餐+儿童特惠 特卖汇</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>11225<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="俄罗斯+芬兰+丹麦+瑞典13日跟团游(4钻)·4星 3宫4教堂  松恩峡湾  拒签全退 特卖汇">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/358_02_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="三宫四教堂 松恩峡湾 拒签全退">三宫四教堂 松恩峡湾 拒签全退</p>
+                                        </div>
+                                        <p class="item_name">俄罗斯+芬兰+丹麦+瑞典13日跟团游(4钻)·4星 3宫4教堂  松恩峡湾  拒签全退 特卖汇</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>15390<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="巴厘岛+新加坡7日6晚自由行·暑假新航亲子游 立减500/人 特卖汇">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/0915325ca4cf414fb7493498eb1542d1_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="暑假亲子游预售，品质之选">暑假亲子游预售，品质之选</p>
+                                        </div>
+                                        <p class="item_name">巴厘岛+新加坡7日6晚自由行·暑假新航亲子游 立减500/人 特卖汇</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>4430<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="泰国曼谷+芭提雅6日5晚跟团游(4钻)·优质航空 香港机场免税店  升级国五 特卖汇">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/191_13_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="优质航空 香港机场免税店  升级国五">优质航空 香港机场免税店  升级国五</p>
+                                        </div>
+                                        <p class="item_name">泰国曼谷+芭提雅6日5晚跟团游(4钻)·优质航空 香港机场免税店  升级国五 特卖汇</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>1399<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="斯里兰卡7日6晚跟团游(4钻)·高山采茶+2晚海景房+海边火车+特卖汇">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/CggYHVYfUeaASAo5AACG7jtacFk045_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="暑假旺季前最后一波特价！重要的事情说三遍！">暑假旺季前最后一波特价！重要的事情说三遍！</p>
+                                        </div>
+                                        <p class="item_name">斯里兰卡7日6晚跟团游(4钻)·高山采茶+2晚海景房+海边火车+特卖汇</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>7699<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="长滩岛5日4晚自由行(5钻)·特卖汇/住丽晶沙滩或文华/即时确认">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/610_111_C_500_280.jpg" alt=""/>
+                                            <span class="tag tag_tmh">特卖</span>
+                                            <p class="item_overlay" title="入住2号码头5钻酒店！">入住2号码头5钻酒店！</p>
+                                        </div>
+                                        <p class="item_name">长滩岛5日4晚自由行(5钻)·特卖汇/住丽晶沙滩或文华/即时确认</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>4283<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">席位充足</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="extra_item" title="你不可不看的旅游特价频道！">
+                                    <a href="#">
+                                        <p class="extra_thumbnail">
+                                            <img src="images/tmh0427_4_220x330.png" alt=""/>
+                                        </p>
+                                        <p class="extra_text">你不可不看的旅游特价频道！</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--国际酒店-->
+        <div class="mod hotel" id="hotel">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">海外酒店<i></i></span>
+                    <span>国内酒店<i></i></span>
+                    <span>酒店+景点<i></i></span>
+                    <span>客栈民宿<i></i></span>
+                    <span>团购<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd">
+                <div class="mod_bd_panel hotel_abroad">
+                    <div class="entrance">
+                        <dl class="keyword_long">
+                            <dt>促销</dt>
+                            <dd>
+                                <span class="entrance_item" title="小长假热门酒店5折起">
+                                    <a href="#">小长假热门酒店5折起</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="新加坡特色酒店低价订">
+                                    <a href="#">新加坡特色酒店低价订</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="美国酒店5折起">
+                                    <a href="#">美国酒店5折起</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="华人礼遇尊享限时5折起">
+                                    <a href="#">华人礼遇尊享限时5折起</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="海外酒店清凉价99元起">
+                                    <a href="#">海外酒店清凉价99元起</a>
+                                </span>
+                            </dd>
+                        </dl>
+                        <dl class="keyword_long">
+                            <dt>发现酒店</dt>
+                            <dd>
+                                <span class="entrance_item" title="去这些民宿屋里体验韩式风情">
+                                    <a href="#">去这些民宿屋里体验韩式风情</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="拉斯维加斯精品酒店大盘点">
+                                    <a href="#">拉斯维加斯精品酒店大盘点</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="口碑极佳的国外青旅大盘点">
+                                    <a href="#">口碑极佳的国外青旅大盘点</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="细说全球特色SPA酒店">
+                                    <a href="#">细说全球特色SPA酒店</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="国外最有腔调的亲子酒店大盘点">
+                                    <a href="#">国外最有腔调的亲子酒店大盘点</a>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="product">
+                        <div class="product_hd">
+                            <ul class="inner_tabs_nav">
+                                <li class="active"><a href="#">热门城市</a></li>
+                                <li><a href="#">都市购物</a></li>
+                                <li><a href="#">海导休闲</a></li>
+                                <li><a href="#">旅游胜地</a></li>
+                            </ul>
+                            <a href="#" class="link_more">
+                                更多海外酒店&gt;
+                            </a>
+                        </div>
+                        <div class="product_bd">
+                            <div class="inner_tab_panel active">
+                                <div class="product_item product_item_complex" title="新加坡">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/singapore73-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="item_msg">
+                                            <p class="item_name">新加坡</p>
+                                            <p class="item_num">493家酒店</p>
+                                            <p class="item_info">
+                                                <span class="price">
+                                                    <b>¥</b>70<i class="price_info">起</i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item product_item_complex" title="首尔">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/seoul274-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="item_msg">
+                                            <p class="item_name">首尔</p>
+                                            <p class="item_num">1774家酒店</p>
+                                            <p class="item_info">
+                                                <span class="price">
+                                                    <b>¥</b>62<i class="price_info">起</i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item product_item_complex" title="曼谷">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/bangkok359-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="item_msg">
+                                            <p class="item_name">曼谷</p>
+                                            <p class="item_num">2389家酒店</p>
+                                            <p class="item_info">
+                                                <span class="price">
+                                                    <b>¥</b>18<i class="price_info">起</i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item product_item_complex" title="东京">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/tokyo228-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="item_msg">
+                                            <p class="item_name">东京</p>
+                                            <p class="item_num">1021家酒店</p>
+                                            <p class="item_info">
+                                                <span class="price">
+                                                    <b>¥</b>1021<i class="price_info">起</i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item product_item_complex" title="吉隆坡">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/kualalumpur315-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="item_msg">
+                                            <p class="item_name">吉隆坡</p>
+                                            <p class="item_num">1432家酒店</p>
+                                            <p class="item_info">
+                                                <span class="price">
+                                                    <b>¥</b>27<i class="price_info">起</i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item product_item_complex" title="大阪">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="images/osaka219-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="item_msg">
+                                            <p class="item_name">大阪</p>
+                                            <p class="item_num">897家酒店</p>
+                                            <p class="item_info">
+                                                <span class="price">
+                                                    <b>¥</b>44<i class="price_info">起</i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="extra_item" title="海外酒店 惊爆底价">
+                                    <a href="#">
+                                        <p class="extra_thumbnail">
+                                            <img src="images/jb220x330.jpg" alt=""/>
+                                        </p>
+                                        <p class="extra_text">海外酒店 惊爆底价</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--国际机票-->
+        <div class="mod flightC" id="flightC">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">国际机票<i></i></span>
+                    <span>国内特价机票<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd">
+                <div class="mod_bd_panel mod_bd_panel_flightC">
+                    <div class="product">
+                        <div class="product_hd">
+                            <ul class="inner_tabs_nav">
+                                <li class="active"><a href="#">热门往返</a></li>
+                                <li><a href="#">亚洲</a></li>
+                                <li><a href="#">欧洲</a></li>
+                                <li><a href="#">美洲</a></li>
+                                <li><a href="#">非洲</a></li>
+                            </ul>
+                            <a href="#" class="link_more">
+                                更多国际特价机票&gt;
+                            </a>
+                        </div>
+                        <div class="product_bd">
+                            <div class="inner_tab_panel">
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_name">上海<i class="icon_round"></i>大阪</p>
+                                        <p class="item_info">
+                                            <span class="date">6月12日 - 6月15日</span>
+                                        </p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>200<i class="price_info">起</i>
+                                            </span>
+                                            <span class="button_yellow">立抢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="extra_item" title="周末出行，机票200封顶">
+                                    <a href="#">
+                                        <p class="extra_thumbnail">
+                                            <img src="images/zmcx220x360.jpg" alt=""/>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--国际租车-->
+        <div class="mod car" id="car">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">国际租车<i></i></span>
+                    <span>国际接送机<i></i></span>
+                    <span>国内租车<i></i></span>
+                    <span>国内接送机<i></i></span>
+                    <span>日租包车<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd">
+                <div class="mod_bd_panel">
+                    <div class="entrance">
+                        <dl class="keyword_long">
+                            <dt>国际租车活动</dt>
+                            <dd>
+                                <span class="entrance_item" title="付4租7 自驾游美加">
+                                    <a href="#">付4租7 自驾游美加</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="3重礼 诚邀夏威夷自驾体验师">
+                                    <a href="#">3重礼 诚邀夏威夷自驾体验师</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="自驾血拼回国 免费接机">
+                                    <a href="#">自驾血拼回国 免费接机</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="订国际租车就送免费GPS">
+                                    <a href="#">订国际租车就送免费GPS</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="订国际租车 租随身wifi 享超低价">
+                                    <a href="#">订国际租车 租随身wifi 享超低价</a>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="product">
+                        <div class="product_hd">
+                            <ul class="inner_tabs_nav">
+                                <li class="active"><a href="#">小型轿车</a></li>
+                                <li><a href="#">中型轿车</a></li>
+                                <li><a href="#">大型轿车</a></li>
+                                <li><a href="#">高档轿车</a></li>
+                                <li><a href="#">中型SUV</a></li>
+                                <li><a href="#">标准SUV</a></li>
+                                <li><a href="#">全尺SUV</a></li>
+                            </ul>
+                            <a href="#" class="link_more">
+                                更多国际租车&gt;
+                            </a>
+                        </div>
+                        <div class="product_bd">
+                            <div class="inner_tab_panel">
+                                <div class="product_item" title="美国 洛杉矶">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/Versa.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">美国 洛杉矶</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>142<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">自驾梦幻1号公路</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="加拿大 温哥华">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/Chevrolet_Aveo.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">加拿大 温哥华</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>163<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">环游如画温哥华岛</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="澳大利亚 墨尔本">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/Toyota_Yaris.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">澳大利亚 墨尔本</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>189<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">大洋路绝美海岸线</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="德国 慕尼黑">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/VW_Polo.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">德国 慕尼黑</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>189<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">啤酒之城驾车狂欢</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--当地游玩 • 海外-->
+        <div class="mod play" id="play">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">当地玩乐 • 海外<i></i></span>
+                    <span>当地玩乐 • 国内<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd">
+                <div class="mod_bd_panel">
+                    <div class="entrance">
+                        <dl class="keyword_short">
+                            <dt>热门目的地</dt>
+                            <dd>
+                                <span class="entrance_item" title="普吉岛">
+                                    <a href="#">普吉岛</a>
+                                </span>
+                                <span class="entrance_item" title="东京">
+                                    <a href="#">东京</a>
+                                </span>
+                                <span class="entrance_item" title="香港">
+                                    <a href="#">香港</a>
+                                </span>
+                                <span class="entrance_item" title="首尔">
+                                    <a href="#">首尔</a>
+                                </span>
+                                <span class="entrance_item" title="台北">
+                                    <a href="#">台北</a>
+                                </span>
+                                <span class="entrance_item" title="清迈">
+                                    <a href="#">清迈</a>
+                                </span><span class="entrance_item" title="巴黎">
+                                    <a href="#">巴黎</a>
+                                </span><span class="entrance_item" title="迪拜">
+                                    <a href="#">迪拜</a>
+                                </span><span class="entrance_item" title="夏威夷">
+                                    <a href="#">夏威夷</a>
+                                </span><span class="entrance_item" title="新加坡">
+                                    <a href="#">新加坡</a>
+                                </span>
+                                <span class="entrance_item" title="巴厘岛">
+                                    <a href="#">巴厘岛</a>
+                                </span>
+                                <span class="entrance_item" title="普吉岛">
+                                    <a href="#">毛里求斯</a>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="product">
+                        <div class="product_hd">
+                            <ul class="inner_tabs_nav">
+                                <li class="active"><a href="#">特惠推荐</a></li>
+                                <li><a href="#">一日游</a></li>
+                                <li><a href="#">交通接驳</a></li>
+                                <li><a href="#">当地美食</a></li>
+                                <li><a href="#">新奇探险</a></li>
+                                <li><a href="#">港澳过关</a></li>
+                                <li><a href="#">演出</a></li>
+                            </ul>
+                            <a href="#" class="link_more">
+                                更多当地玩乐&gt;
+                            </a>
+                        </div>
+                        <div class="product_bd">
+                            <div class="inner_tab_panel">
+                                <div class="product_item" title="【免费狂欢·泰旅局官方主办】苏梅岛 6·25粉白蜜月海滩派对（含接车服务，仅限12对）">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/350j04000000059vgC318_C_280_158.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">【免费狂欢·泰旅局官方主办】苏梅岛 6·25粉白蜜月海滩派对（含接车服务，仅限12对）</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>299<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">泰国·苏梅岛</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="迪拜沙漠冲沙之旅（阿拉伯烧烤+传统身体彩绘+肚皮舞）">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYHFZEV-OAa46wAABjsoIP-3g067_C_280_158.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">迪拜沙漠冲沙之旅（阿拉伯烧烤+传统身体彩绘+肚皮舞）</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>299<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">阿联酋·迪拜</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="【携程独家，100%确认】美国大峡谷（西峡）直升机空览项目【含午餐，赠送拉斯维加斯往返接送服务】">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYsVcwF-CANKCGAARbV8D7uWQ859_C_280_158.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">【携程独家，100%确认】美国大峡谷（西峡）直升机空览项目【含午餐，赠送拉斯维加斯往返接送服务】</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>950<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">美国·拉斯维加斯(内华达州)</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="【新品优惠334元】巴厘岛 海神庙+烤乳猪饭+乌鲁瓦图情人崖+梦幻海滩下午茶+金巴兰海鲜BBQ+自助餐一日游（可选龙虾）【专车专导】【巴厘岛大促】">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYs1cUpR-AJngXAACwI7ZBwN8030_C_280_158.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">【新品优惠334元】巴厘岛 海神庙+烤乳猪饭+乌鲁瓦图情人崖+梦幻海滩下午茶+金巴兰海鲜BBQ+自助餐一日游（可选龙虾）【专车专导】【巴厘岛大促】</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>260<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">印度尼西亚·巴厘岛</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--全球购-->
+        <div class="mod buy" id="buy">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">全球购<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd">
+                <div class="mod_bd_panel">
+                    <div class="entrance">
+                        <dl class="keyword_short">
+                            <dt>热门目的地</dt>
+                            <dd>
+                                <span class="entrance_item" title="日本">
+                                    <a href="#">日本</a>
+                                </span>
+                                <span class="entrance_item" title="香港">
+                                    <a href="#">香港</a>
+                                </span>
+                                <span class="entrance_item" title="韩国">
+                                    <a href="#">韩国</a>
+                                </span>
+                                <span class="entrance_item" title="法国">
+                                    <a href="#">法国</a>
+                                </span>
+                                <span class="entrance_item" title="澳门">
+                                    <a href="#">澳门</a>
+                                </span>
+                                <span class="entrance_item" title="新加坡">
+                                    <a href="#">新加坡</a>
+                                </span><span class="entrance_item" title="美国">
+                                    <a href="#">美国</a>
+                                </span><span class="entrance_item" title="台湾">
+                                    <a href="#">台湾</a>
+                                </span><span class="entrance_item" title="澳大利亚">
+                                    <a href="#">澳大利亚</a>
+                                </span><span class="entrance_item" title="英国">
+                                    <a href="#">英国</a>
+                                </span>
+                                <span class="entrance_item" title="泰国">
+                                    <a href="#">泰国</a>
+                                </span>
+                                <span class="entrance_item" title="西班牙">
+                                    <a href="#">西班牙</a>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="product">
+                        <div class="product_hd">
+                            <ul class="inner_tabs_nav">
+                                <li class="active"><a href="#">热门商户</a></li>
+                                <li><a href="#">精品百货</a></li>
+                                <li><a href="#">奢品大牌</a></li>
+                                <li><a href="#">口碑推荐</a></li>
+                                <li><a href="#">新店首选</a></li>
+                            </ul>
+                            <a href="#" class="link_more">
+                                更多全球名店&gt;
+                            </a>
+                        </div>
+                        <div class="product_bd">
+                            <div class="inner_tab_panel">
+                                <div class="product_item" title="DFS旗下T广场（香港广东道店）DFS T Galleria（Hong Kong Canton Road）">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYGlXv8PGAAwWvAAFEMvuJcBU449_C_570_285.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">DFS旗下T广场（香港广东道店）DFS T Galleria（Hong Kong Canton Road）</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>456<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">中国 • 香港</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="周大福（尖沙咀第七分行店）Chow Tai Fook">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/Cghzf1SrqjSAB15AAAEY4YiJ6Ss880_C_570_285.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">周大福（尖沙咀第七分行店）Chow Tai Fook</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>369<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">中国 • 香港</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="老佛爷百货公司（奥斯曼旗舰店）Galeries Lafayette Haussmann">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/228a16d1c4844dbebcae5d1b3c88db34_C_570_285.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">老佛爷百货公司（奥斯曼旗舰店）Galeries Lafayette Haussmann</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>812<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">法国 • 巴黎</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="product_item" title="新罗免税店（首尔店）The Shilla Duty Free Seoul">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/24e9dffb9e4d486f81ef8b884d08b7b1_C_570_285.jpg" alt=""/>
+                                        </p>
+                                        <p class="item_name">新罗免税店（首尔店）The Shilla Duty Free Seoul</p>
+                                        <p class="item_info">
+                                            <span class="price">
+                                                <b>¥</b>996<i class="price_info">起</i>
+                                            </span>
+                                            <span class="item-type">韩国 • 首尔</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--目的地攻略-->
+        <div class="mod guide" id="guide">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">目的地攻略<i></i></span>
+                    <span>旅游旗舰店<i></i></span>
+                    <span>当地向导<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd">
+                <div class="mod_bd_panel">
+                    <div class="entrance">
+                        <dl class="keyword_long">
+                            <dt>当地推荐</dt>
+                            <dd>
+                                <span class="entrance_item" title="圣托里尼：永恒的蓝白世界">
+                                    <a href="#">圣托里尼：永恒的蓝白世界</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="哥本哈根：走进安徒生的童话世界">
+                                    <a href="#">哥本哈根：走进安徒生的童话世界</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="圣彼得堡：风光迤逦的北方威尼斯">
+                                    <a href="#">圣彼得堡：风光迤逦的北方威尼斯</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="清迈：文艺清新的泰北明珠">
+                                    <a href="#">清迈：文艺清新的泰北明珠</a>
+                                </span>
+                            </dd>
+                            <dd>
+                                <span class="entrance_item" title="柏林：啤酒相约猪肘">
+                                    <a href="#">柏林：啤酒相约猪肘</a>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="product">
+                        <div class="product_hd">
+                            <ul class="inner_tabs_nav">
+                                <li class="active"><a href="#">旅行正当时</a></li>
+                                <li><a href="#">看海悠悠乐</a></li>
+                                <li><a href="#">教你买买买</a></li>
+                                <li><a href="#">攻略精选活动</a></li>
+                            </ul>
+                            <a href="#" class="link_more">
+                                更多旅游攻略&gt;
+                            </a>
+                        </div>
+                        <div class="product_bd">
+                            <div class="inner_tab_panel">
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYG1ZucFWALuPjAAAu62TVM5A595_R_220_160.jpg" alt=""/>
+                                        </p>
+                                        <div class="item_overlay">
+                                            <p class="item_name">醉美温泉好地方</p>
+                                            <p class="item_info">
+                                                <span class="item_info_detail">来这儿，过一个温暖的冬天</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYGVbX65iATNdVAAA7LewgnC4836_R_220_160.jpg" alt=""/>
+                                        </p>
+                                        <div class="item_overlay">
+                                            <p class="item_name">比九寨还美的隐地</p>
+                                            <p class="item_info">
+                                                <span class="item_info_detail"></span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYHVaEmsCAcVPBAAAyJM7bRE0393_R_220_160.jpg" alt=""/>
+                                        </p>
+                                        <div class="item_overlay">
+                                            <p class="item_name">说走就走的境外游</p>
+                                            <p class="item_info">
+                                                <span class="item_info_detail"></span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product_item">
+                                    <a href="#">
+                                        <p class="item_thumbnail">
+                                            <img src="images/CggYG1Z7XuuAPszkAABAZUwefFE594_R_220_160.jpg" alt=""/>
+                                        </p>
+                                        <div class="item_overlay">
+                                            <p class="item_name">古镇，独特风情</p>
+                                            <p class="item_info">
+                                                <span class="item_info_detail"></span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--旅行服务-->
+        <div class="mod serve" id="serve">
+            <div class="mod_hd">
+                <h2 class="title">
+                    <span class="current">旅行服务<i></i></span>
+                </h2>
+            </div>
+            <div class="mod_bd_travel">
+                <div class="supply_box">
+                    <div class="supply_hd">
+                        <div class="supply_img">
+                            <span class="img_wifi"><i></i></span>
+                        </div>
+                        <div class="supply_cont">
+                            <p class="supply_title">出境WiFi</p>
+                            <div class="supply_intro">
+                                <p>全球出境WiFi租凭</p>
+                                <p>流量不限、多人共享、携带便捷、低价信号强</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="supply_bd">
+                        <ul class="supply_list col_4">
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon icon_place"><img src="images/supply_icon.png" alt=""/></i>日本
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon icon_place"><img src="images/supply_icon.png" alt=""/></i>韩国
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon icon_place"><img src="images/supply_icon.png" alt=""/></i>欧洲通用
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon icon_place"><img src="images/supply_icon.png" alt=""/></i>更多
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="supply_box">
+                    <div class="supply_hd">
+                        <div class="supply_img">
+                            <span class="img_visa"><i></i></span>
+                        </div>
+                        <div class="supply_cont">
+                            <p class="supply_title">签证</p>
+                            <div class="supply_intro">
+                                <p>退款保障：送签前均可申请订单全额退款</p>
+                                <p>出签成功率 99.8%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="supply_bd">
+                        <ul class="supply_list col_4">
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon"><img src="images/24-japan.png" alt=""/></i>日本
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon"><img src="images/24-korea.png" alt=""/></i>韩国
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon"><img src="images/24-USA.png" alt=""/></i>美国
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon"><img src="images/24-Australia.png" alt=""/></i>澳大利亚
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="supply_box">
+                    <div class="supply_hd">
+                        <div class="supply_img">
+                            <span class="img_insurance"><i></i></span>
+                        </div>
+                        <div class="supply_cont">
+                            <p class="supply_title">保险</p>
+                            <div class="supply_intro">
+                                <p>携程保险，安心随行</p>
+                                <p>旅游定制、极速出保、便捷理赔</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="supply_bd">
+                        <ul class="supply_list col_3">
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon"><img src="images/meiya.png" alt=""/></i>【申根之王】
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon"><img src="images/pingan.png" alt=""/></i>【亚洲优选】
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="supply_item">
+                                    <i class="icon"><img src="images/renshou.png" alt=""/></i>【国内畅游】
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--页脚-->
+    <footer class="mod footer">
+        <dl class="footer_item advantage">
+            <dt>为什么选择携程</dt>
+            <dd>
+                <div class="advan_item advan_server">
+                    <div class="advan_img"><i class="icon icon_server"></i></div>
+                    <div class="advan_text">
+                        <p class="advan_title">放心服务</p>
+                        <p>领先的服务标准 独创的保障体系</p>
+                    </div>
+                </div>
+                <div class="advan_item advan_price">
+                    <div class="advan_img"><i class="icon icon_price"></i></div>
+                    <div class="advan_text">
+                        <p class="advan_title">放心的价格</p>
+                        <p>具竞争力的价格 无任何隐形费用</p>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="footer_item travel_info">
+            <dt>旅游资讯</dt>
+            <dd class="ft_link_item"><a href="#">宾馆索引</a></dd>
+            <dd class="ft_link_item"><a href="#">攻略索引</a></dd>
+            <dd class="ft_link_item"><a href="#">机票索引</a></dd>
+            <dd class="ft_link_item"><a href="#">网站导航</a></dd>
+            <dd class="ft_link_item"><a href="#">旅游索引</a></dd>
+            <dd class="ft_link_item"><a href="#">火车票索引</a></dd>
+            <dd class="ft_link_item"><a href="#">邮轮索引</a></dd>
+            <dd class="ft_link_item"><a href="#">企业差旅索引</a></dd>
+            <dd class="ft_link_item"><a href="#">用车索引</a></dd>
+        </dl>
+        <dl class="footer_item join_in">
+            <dt>加盟合作</dt>
+            <dd class="ft_link_item"><a href="#">分销联盟</a></dd>
+            <dd class="ft_link_item"><a href="#">友情链接</a></dd>
+            <dd class="ft_link_item"><a href="#">广告业务</a></dd>
+            <dd class="ft_link_item"><a href="#">企业礼品卡采购</a></dd>
+            <dd class="ft_link_item"><a href="#">保险代理</a></dd>
+            <dd class="ft_link_item"><a href="#">代理合作</a></dd>
+            <dd class="ft_link_item"><a href="#">酒店加盟</a></dd>
+            <dd class="ft_link_item"><a href="#">旅游局及景区合作</a></dd>
+            <dd class="ft_link_item"><a href="#">智慧旅游</a></dd>
+        </dl>
+        <dl class="footer_item about_ctrip">
+            <dt>关于携程</dt>
+            <dd class="ft_link_item"><a href="#">关于携程</a></dd>
+            <dd class="ft_link_item"><a href="#">携程热点</a></dd>
+            <dd class="ft_link_item"><a href="#">联系我们</a></dd>
+            <dd class="ft_link_item"><a href="#">诚聘英才</a></dd>
+            <dd class="ft_link_item"><a href="#">旅游度假资质</a></dd>
+            <dd class="ft_link_item"><a href="#">企业公民</a></dd>
+            <dd class="ft_link_item"><a href="#">服务说明</a></dd>
+            <dd class="ft_link_item"><a href="#">营业执照</a></dd>
+            <dd class="ft_link_item"><a href="#">安全中心</a></dd>
+        </dl>
+        <dl class="footer_item wechat_code">
+            <dt>微信公众号</dt>
+            <dd class="ft_link_item">
+                <span class="code_wechat">
+                    <img src="images/er_ctrip_wechat.jpg" alt=""></span>
+                <p class="wechat_text">扫一扫,领旅行福利</p>
+            </dd>
+        </dl>
+    </footer>
+    <footer class="mod copyright">
+        <p class="copyright"><a href="#">Copyright©</a>1999-2016, <a href="#"> ctrip.com</a>. All rights reserved. | <a href="#">ICP证：沪B2-20050130</a></p>
+        <p class="lgwb"><a href="#"><i class="icon_lgwb"></i>沪公网备31010502000018号</a></p>
+        <div class="honour_wrap">
+            <a href="#" title="网信编码：163178864X" class="honour1">信用评级</a>
+            <a href="#" title="工商亮照标识" class="honour2">上海工商</a>
+            <a href="#" title="诚信认证示范企业" class="honour3">诚信网站</a>
+            <a href="#" class="honour4" title="征信网">网络社会征信网</a>
+            <a href="#" class="honour5" title="上海市互联网违法与违规信息举报中心">信息举报中心</a>
+            <a href="#" class="honour6" title="可信网站">可信网站</a>
+            <a href="#" class="honour8" title="违法和不良信息举报中心">违法和不良信息举报中心</a>
+            <span class="honour7" title="违法和不良信息举报电话">违法和不良信息举报电话</span>
+            <a href="#" class="honour9" title="网购大家评">网购大家评</a>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

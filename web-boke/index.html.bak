@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人微博</title>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<h1>个人博客</h1>
+			<p>青春是打开了，就和不上的书。人生是踏上了，就回不了头的路，爱情就是扔出了，就收不回的赌注。</p>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li class="hover"><a href="">首页</a></li>
+				<li><a href="">关于我</a></li>
+				<li><a href="">碎言碎语</a></li>
+				<li><a href="">个人日记</a></li>
+				<li><a href="">相册展示</a></li>
+				<li><a href="">学无止境</a></li>
+				<li><a href="">留言板</a></li>
+			</ul>	
+		</nav>
+		<section id="content">
+			<div class="c_left">
+				<div class="recommend">
+					<h2>文章<span>推荐</span></h2>
+				</div>
+				<div class="content_text">
+					<div class="sub_content">
+						<h3><a href="#" title="浅谈:html5和html的区别">浅谈:html5和html的区别</a></h3>
+						<dl>
+							<dt><img src="images/s.jpg" width="200" height="123"></dt>
+							<dd>
+								<p class="dd_text_1">
+									最近看群里聊天聊得最火热的莫过于手机网站和html5这两个词。可能有人会问，这两者有什么关系呢？随着这移动互联网快速发展的时代，尤其是4G时代已经来临的时刻，加上微软对"XP系统"不提供更新补丁、维护的情况下。html5+css3也逐渐的成为新一代web前端技术.....
+								</p>
+								<p class="dd_text_2">
+									<span class="fl author">段亮</span>
+									<span class="fl time">时间：2016-5-22</span>
+									<span class="fl sort">
+										分类：
+										<a href="#">学无止境</a>
+									</span>
+									<span class="fl read">
+										<a href="#">阅读全文</a>
+									</span>
+								</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="sub_content">
+						<h3><a href="#" title="浅谈:html5和html的区别">浅谈:html5和html的区别</a></h3>
+						<dl>
+							<dt><img src="images/s1.jpg" width="200" height="123"></dt>
+							<dd>
+								<p class="dd_text_1">
+									最近看群里聊天聊得最火热的莫过于手机网站和html5这两个词。可能有人会问，这两者有什么关系呢？随着这移动互联网快速发展的时代，尤其是4G时代已经来临的时刻，加上微软对"XP系统"不提供更新补丁、维护的情况下。html5+css3也逐渐的成为新一代web前端技术.....
+								</p>
+								<p class="dd_text_2">
+									<span class="fl author">段亮</span>
+									<span class="fl time">时间：2016-5-22</span>
+									<span class="fl sort">
+										分类：
+										<a href="#">学无止境</a>
+									</span>
+									<span class="fl read">
+										<a href="#">阅读全文</a>
+									</span>
+								</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="sub_content">
+						<h3><a href="#" title="浅谈:html5和html的区别">浅谈:html5和html的区别</a></h3>
+						<dl>
+							<dt><img src="images/s3.jpg" width="200" height="123"></dt>
+							<dd>
+								<p class="dd_text_1">
+									最近看群里聊天聊得最火热的莫过于手机网站和html5这两个词。可能有人会问，这两者有什么关系呢？随着这移动互联网快速发展的时代，尤其是4G时代已经来临的时刻，加上微软对"XP系统"不提供更新补丁、维护的情况下。html5+css3也逐渐的成为新一代web前端技术.....
+								</p>
+								<p class="dd_text_2">
+									<span class="fl author">段亮</span>
+									<span class="fl time">时间：2016-5-22</span>
+									<span class="fl sort">
+										分类：
+										<a href="#">学无止境</a>
+									</span>
+									<span class="fl read">
+										<a href="#">阅读全文</a>
+									</span>
+								</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="sub_content">
+						<h3><a href="#" title="浅谈:html5和html的区别">浅谈:html5和html的区别</a></h3>
+						<dl>
+							<dt><img src="images/s2.jpg" width="200" height="123"></dt>
+							<dd>
+								<p class="dd_text_1">
+									最近看群里聊天聊得最火热的莫过于手机网站和html5这两个词。可能有人会问，这两者有什么关系呢？随着这移动互联网快速发展的时代，尤其是4G时代已经来临的时刻，加上微软对"XP系统"不提供更新补丁、维护的情况下。html5+css3也逐渐的成为新一代web前端技术.....
+								</p>
+								<p class="dd_text_2">
+									<span class="fl author">段亮</span>
+									<span class="fl time">时间：2016-5-22</span>
+									<span class="fl sort">
+										分类：
+										<a href="#">学无止境</a>
+									</span>
+									<span class="fl read">
+										<a href="#">阅读全文</a>
+									</span>
+								</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="sub_content">
+						<h3><a href="#" title="浅谈:html5和html的区别">浅谈:html5和html的区别</a></h3>
+						<dl>
+							<dt><img src="images/s3.jpg" width="200" height="123"></dt>
+							<dd>
+								<p class="dd_text_1">
+									最近看群里聊天聊得最火热的莫过于手机网站和html5这两个词。可能有人会问，这两者有什么关系呢？随着这移动互联网快速发展的时代，尤其是4G时代已经来临的时刻，加上微软对"XP系统"不提供更新补丁、维护的情况下。html5+css3也逐渐的成为新一代web前端技术.....
+								</p>
+								<p class="dd_text_2">
+									<span class="fl author">段亮</span>
+									<span class="fl time">时间：2016-5-22</span>
+									<span class="fl sort">
+										分类：
+										<a href="#">学无止境</a>
+									</span>
+									<span class="fl read">
+										<a href="#">阅读全文</a>
+									</span>
+								</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+	</body>
+</html>
